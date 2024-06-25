@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Parameters Calculation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p><b>Note:</b> The file you are uploading should have Subject_ID, VCO2, VO2, RQ, GT_BGL columns. The column names should be in the same format as above.</p>
+      <h1>Upload CSV File</h1>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
